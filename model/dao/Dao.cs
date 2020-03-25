@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace ExpenseManager.model.dao
 {
-    class Dao
+    public class Dao
     {
         private const string _connStr = "" +
             "server=localhost;" +
@@ -33,7 +33,6 @@ namespace ExpenseManager.model.dao
             try
             {
                 this.conn = new MySqlConnection(_connStr);
-                conn.Open();
             }
             catch (Exception ex)
             {

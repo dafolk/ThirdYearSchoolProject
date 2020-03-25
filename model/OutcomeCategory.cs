@@ -10,5 +10,11 @@ namespace ExpenseManager.model
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public OutcomeCategory(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
     }
 }
